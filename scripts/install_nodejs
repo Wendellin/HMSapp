@@ -6,8 +6,7 @@ cd /home/ec2-user
 yum -y update
 yum -y upgrade
 
-curl -fsSL https://deb.nodesource.com/setup_21.x | bash - &&\
-yum install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_21.x | bash - &&\ yum install -y nodejs
 
 yum -y install npm
 
