@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd /home/ec2-user
+
+# Install nodejs
+sudo yum -y update
+sudo yum -y upgrade
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc
+nvm install v14.10.0
+nvm install lts/hydrogen
+nvm use v14.10.0
+
