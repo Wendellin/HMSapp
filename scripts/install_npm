@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd /home/ec2-user
+
+# Install php
+yum -y update
+yum -y upgrade
+yum -y install nodejs
+
+yum -y install npm
+

@@ -16,6 +16,12 @@ hooks:
   - location: scripts/install_nginx
     timeout: 300
     runas: root
+  - location: scripts/install_php
+    timeout: 300
+    runas: root
+  - location: scripts/install_nodejs
+    timeout: 300
+    runas: root   
   ApplicationStart:
   - location: scripts/start_server
     timeout: 300

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd /home/ec2-user
+
+# Install php
+yum -y update
+yum -y upgrade
+yum -y install php-cli unzip
+cd ~
+curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+
